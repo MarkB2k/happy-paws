@@ -1,0 +1,36 @@
+/* Happy Paws shared styles */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Roboto:wght@400;700&display=swap');
+
+body{ font-family:'Roboto',sans-serif; line-height:1.6; }
+
+h1,.navbar-brand{ font-family:'Chewy',cursive; }
+.navbar-brand{ font-size:1.5rem; }
+
+/* hero */
+.hero{
+  background:url('../images/image9.jpg') center/cover no-repeat;
+  min-height:60vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  text-shadow:1px 1px 3px rgba(0,0,0,.7);
+}
+
+/* gallery hover */
+.gallery-img{ cursor:pointer; transition:transform .3s; }
+.gallery-img:hover{ transform:scale(1.05); }
+.caption{ transition:all .3s; }
+
+/* uniform thumbnail sizing */
+.gallery-img{
+  width:100%;
+  aspect-ratio:1/1;      /* square thumbs – change to 4/3 if preferred */
+  height:auto;           /* fallback */
+  object-fit:cover;      /* crop without distortion */
+}
+
+/* footer */
+footer{ background:#f8f9fa; padding:1rem 0; text-align:center; }
+
+.nav-link.active{ text-decoration:underline; }
